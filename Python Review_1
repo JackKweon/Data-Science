@@ -1,0 +1,7 @@
+//get values from user
+// print out the sum of different types of value.
+def var_args(*args, **kwargs):
+    print(args)
+    print(kwargs)
+    args = list(args)+ [*kwargs.values()]
+    return sum(args)
